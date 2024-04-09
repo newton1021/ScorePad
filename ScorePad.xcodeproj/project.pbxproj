@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD279BB82BC4B0C800A65A57 /* myStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD279BB72BC4B0C800A65A57 /* myStepper.swift */; };
 		DD47D80A2BA9E39A0090B04C /* ScorePadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD47D8092BA9E39A0090B04C /* ScorePadApp.swift */; };
 		DD47D80C2BA9E39A0090B04C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD47D80B2BA9E39A0090B04C /* ContentView.swift */; };
 		DD47D80E2BA9E39D0090B04C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD47D80D2BA9E39D0090B04C /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD279BB72BC4B0C800A65A57 /* myStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myStepper.swift; sourceTree = "<group>"; };
 		DD47D8062BA9E39A0090B04C /* ScorePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScorePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD47D8092BA9E39A0090B04C /* ScorePadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePadApp.swift; sourceTree = "<group>"; };
 		DD47D80B2BA9E39A0090B04C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				DD47D8092BA9E39A0090B04C /* ScorePadApp.swift */,
 				DD47D80B2BA9E39A0090B04C /* ContentView.swift */,
 				DD47D8342BA9E45B0090B04C /* ScoreSheet.swift */,
+				DD279BB72BC4B0C800A65A57 /* myStepper.swift */,
 				DD47D80D2BA9E39D0090B04C /* Assets.xcassets */,
 				DD47D80F2BA9E39D0090B04C /* ScorePad.entitlements */,
 				DD47D8102BA9E39D0090B04C /* Preview Content */,
@@ -265,6 +268,7 @@
 				DD47D8352BA9E45C0090B04C /* ScoreSheet.swift in Sources */,
 				DD47D80C2BA9E39A0090B04C /* ContentView.swift in Sources */,
 				DD47D80A2BA9E39A0090B04C /* ScorePadApp.swift in Sources */,
+				DD279BB82BC4B0C800A65A57 /* myStepper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
