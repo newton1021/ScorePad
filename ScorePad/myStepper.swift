@@ -16,11 +16,12 @@ func myStepper (_ title: String, value: Binding<Int>, calc: (Int) -> Int) -> som
         Stepper(title, value: value)
             .foregroundStyle(.purple).bold()
         Image(systemName: "\(value.wrappedValue).circle")
-            .font(.headline)
+            .font(.system(size: 20))
             .foregroundStyle(Color.black)
+            .padding(.leading, 5)
         
         Text("\(calc(value.wrappedValue))")
-            .frame(width: 100,alignment: .trailing)
+            .frame(width: 80,alignment: .trailing)
     }
 }
 
