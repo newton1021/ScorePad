@@ -81,25 +81,12 @@ struct ScoreSheet: View {
                  
                 
                 Section("Header"){
-                    myStepper(value: $header7)
+                    //myStepper(value: $header7)
                     
                     VStack(alignment: .trailing){
-                        HStack{
-                            Stepper("7s", value:  $header7)
-                            Text("\(header7 * 5000)")
-                                .frame(width: 100,alignment: .trailing)
-                        }
-                        HStack{
-                            Stepper("5s", value:  $header5)
-                            Text("\(header5 * 3000)")
-                                .frame(width: 100,alignment: .trailing)
-                        }
-                        
-                        HStack{
-                            Stepper("Wilds", value:  $headerWild)
-                            Text("\(headerWild * 2500)")
-                                .frame(width: 100,alignment: .trailing)
-                        }
+                        myStepper("7's", value: $header7){$0 * 5000}
+                        myStepper("5's", value: $header5){$0 * 3000}
+                        myStepper("Wilds", value: $headerWild){$0 * 2500}
                         
                         HStack{
                             Toggle("Red", isOn: $headerNatural)
@@ -114,6 +101,7 @@ struct ScoreSheet: View {
                     }
                 }
                 Section("Conastas"){
+                    //myStepper("Red 3", value: $countRed3s){$0 * 5000}
                     HStack{
                         Text("Red 3")
                         TextField("Num of Red 3s",text: $countRed3s)
@@ -174,20 +162,7 @@ struct ScoreSheet: View {
         
     }
     
-    @ViewBuilder
-    func myStepper (value: Binding<Int>) -> some View {
-        
-        let title = "Item"
-        HStack {
-            
-            Stepper(title, value: value)
-            Text("\(value.wrappedValue)")
-                .font(.subheadline)
-                .foregroundStyle(Color(white: 0.3))
-            Text("\(value.wrappedValue * 5000)")
-                .frame(width: 100,alignment: .trailing)
-        }
-    }
+ 
     
     func red3calc()-> Int {
         var cardCount = Int(countRed3s) ?? 0
